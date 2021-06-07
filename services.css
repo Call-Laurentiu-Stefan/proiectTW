@@ -1,9 +1,7 @@
-html{
-    overflow: scroll;
-}
+
 
 .howitworks .wsquare{
-    display: block;
+
     background-color: white;
     position: relative;
     width: 80em;
@@ -14,40 +12,46 @@ html{
 }
 
 .pricebox .wsquare{
-    display: block;
+    
     background-color: white;
     position: relative;
     width: 80em;
-    height: 40em;
+    height: 20em;
     margin: auto;
     margin-top: 12.75em;
     margin-bottom: 5em;
 }
 
+.button-access{
+    display: inline-block;
+    width: 90%;
+}
 
-@media (max-width: 1195px){
+
+@media (max-width: 1295px){
     .howitworks .wsquare{
         width: 55em;
     }
-    .price .wsquare{
+    .pricebox .wsquare{
         width: 55em;
     }
 }
 
-@media (max-width: 960px){
+@media (max-width: 990px){
     .howitworks .wsquare{
         width: 40em;
     }
-    .price .wsquare{
+    .pricebox .wsquare{
         width: 40em;
     }
+    
 }
 
 @media (max-width: 760px){
     .howitworks .wsquare{
         width: 30em;
     }
-    .price .wsquare{
+    .pricebox .wsquare{
         width: 30em;
     }
 }
@@ -68,7 +72,6 @@ html{
 .accord{
     cursor: pointer;
     text-align: left;
-    transition: 0.5s;
     background-color: white;
     padding: 18px;
     width: 100%;
@@ -76,7 +79,16 @@ html{
     outline: none;
 }
 
-.accordpanel{
+.accord:after{
+    content: '\002B';
+    float:right;
+}
+
+.open:after{
+    content: '\2212';
+}
+
+#accordpanel{
     padding: 0 18px;
     display: none;
     background-color: white;
@@ -93,10 +105,41 @@ html{
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 0.75em;
+    display: block;
 }
 
-.pricetag{
+.pbtlink{
+    font-size: 35px;
+    width:40%;
+    height: 15%;
+    margin-left: 11em;
+    padding-top: 8px;
+    border-radius: 3px;
+    background-color: rgb(47, 161, 150);
+    color:white;
+    text-decoration: none;
+}
+
+@media (max-width:1295px){
+    .priceboxtitle{
+        margin-left: 1em;
+    }
+    .pbtlink{
+        width:60%;
+        margin-left: 5.5em;
+    }
+}
+
+@media (max-width:990px){
+    
+    .pbtlink{
+        width:75%;
+        margin-left: 2.5em;
+    }
+}
+
+
+/*.pricetag{
     float: left;
     display: block;
     border: solid;
@@ -129,4 +172,4 @@ html{
 .tag-perks{
     font-family: 'Montserrat', sans-serif;
     padding-left: 0.75em;
-}
+}*/
